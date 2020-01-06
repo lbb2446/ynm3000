@@ -1,8 +1,9 @@
 {
-  "name": "ynm3000",
-  "version": "1.0.0",
+  "name": "ynm3001",
+  "version": "1.0.1",
   "description": "for lishi keji",
-  "main": "index.js",
+  "repository":"https://github.com/lbb2446/ynm3000",
+  "main": "ynm3000.js",
   "scripts": {
     "test": "mocha -r ts-node/register tests/**/*.spec.ts",
     "dev": "nodemon --watch src -e ts --exec ts-node src/index.ts"

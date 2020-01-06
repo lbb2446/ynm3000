@@ -7,24 +7,22 @@
         
 
         {
-            "name": "启动",
+            "name": "Current TS File",
             "type": "node",
             "request": "launch",
-            "program": "${workspaceRoot}/index.js",
-            "stopOnEntry": false,
-            "args": [],
-            "cwd": "${workspaceRoot}",
-            "preLaunchTask": null,
-            "runtimeExecutable": null,
-            "runtimeArgs": [
-                "--nolazy"
+            "args": [
+              "${workspaceRoot}/src/password.ts" // 入口文件
             ],
-            "env": {
-                "NODE_ENV": "development"
-            },
-            //  "externalConsole": false,
-            "sourceMaps": false,
-            //  "outDir": null
-        }
+            "runtimeArgs": [
+              "--nolazy",
+              "-r",
+              "ts-node/register"
+            ],
+            "sourceMaps": true,
+            "cwd": "${workspaceRoot}",
+            "protocol": "inspector",
+            "console": "integratedTerminal",
+            "internalConsoleOptions": "neverOpen"
+          }
     ]
 }

@@ -118,10 +118,9 @@ function vail(password: string): res {
         level = Level[Level.high]
     }
 
-console.log(score,level)
     //数值判断
     return { score, level }
 }
- vail("1111111111111")
+
 export default vail
 

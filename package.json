@@ -1,9 +1,9 @@
 {
   "name": "ynm3001",
-  "version": "1.0.1",
+  "version": "1.1.1",
   "description": "for lishi keji",
-  "repository":"https://github.com/lbb2446/ynm3000",
-  "main": "ynm3000.js",
+  "repository": "https://github.com/lbb2446/ynm3000",
+  "main": "dist/index.js",
   "scripts": {
     "test": "mocha -r ts-node/register tests/**/*.spec.ts",
     "dev": "nodemon --watch src -e ts --exec ts-node src/index.ts"
@@ -14,6 +14,8 @@
   "author": "lbb",
   "license": "ISC",
   "dependencies": {
+    "gulp": "^4.0.2",
+    "gulp-typescript": "^6.0.0-alpha.1",
     "source-map-loader": "^0.2.4",
     "typescript": "^3.7.4"
   },

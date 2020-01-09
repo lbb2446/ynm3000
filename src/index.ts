@@ -1,2 +1,2 @@
-import  vail  from '../src/password';
-export default {vail}
+import  _vail  from './password'
+export let vail=_vail

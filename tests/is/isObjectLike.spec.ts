@@ -3,7 +3,7 @@ import isObjectLike from "../../src/isObjectLike";
 import { expect } from "chai";
 import "mocha";
 
-describe("is object", () => {
+describe("is object alike", () => {
   it("是对象", () => {
     const result = isObjectLike({});
     expect(result).to.equal(true);

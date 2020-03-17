@@ -1,4 +1,4 @@
-import eq from '../../src/eq'
+import eq from '../src/eq'
 import { expect } from 'chai'
 import 'mocha'
 

@@ -7,7 +7,7 @@ const LARGE_ARRAY_SIZE = 200
 class Stack {
   _data_: ListCache | MapCache
   size: number
-  constructor(entries) {
+  constructor(entries?) {
     this._data_ = new ListCache(entries)
     this.size = this._data_.size
   }

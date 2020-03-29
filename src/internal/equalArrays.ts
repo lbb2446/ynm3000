@@ -9,7 +9,7 @@ const COMPARE_UNORDERED_FLAG = 2
  *
  * @param {Array} array 对比的array
  * @param {Array} other 对比的另一个array
- * @param {Number} bitmask 类型，是1-partial还是2-unordered，猜测是部分对比与无序对比的意思
+ * @param {Number} bitmask 类型，是1-unordered还是2-partial，猜测是部分对比与无序对比的意思
  * @param {Function} customizer 自定义对比函数
  * @param {Function} equalFunc 确定等值的函数
  * @param {Object} stack 堆栈轨迹遍历“数组”和“其他”对象

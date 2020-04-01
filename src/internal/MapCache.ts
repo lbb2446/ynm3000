@@ -21,9 +21,9 @@ class MapCache {
   _data_: object
   size: number
   constructor(entries) {
+    let index = -1
+    this.clear()
     if (entries && entries.length) {
-      this.clear()
-      let index = -1
       while (++index < entries.length) {
         const entry = entries[index]
         this.set(entry[0], entry[1])

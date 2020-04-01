@@ -59,7 +59,6 @@ function equalArrays(
       return false
       break
     }
-
     if (seen) {
       if (
         !some(other, (othValue, othIndex) => {
@@ -74,15 +73,15 @@ function equalArrays(
       ) {
         result = false
         break
-      } else if (
-        !(
-          arrValue === othValue ||
-          equalFunc(arrValue, othValue, bitmask, customizer, stack)
-        )
-      ) {
-        result = false
-        break
       }
+    } else if (
+      !(
+        arrValue === othValue ||
+        equalFunc(arrValue, othValue, bitmask, customizer, stack)
+      )
+    ) {
+      result = false
+      break
     }
   }
 

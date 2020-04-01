@@ -4,13 +4,13 @@ class Hash {
   _data_: object
   size: number
   constructor(entries) {
+    let index = -1
+    this.clear()
     if (entries && entries.length) {
-      this.clear()
       //可能没有foreach方法
       // entries.forEach(entry => {
       //   this.set(entry[0], entry[1])
       // })
-      let index = -1
       while (++index < entries.length) {
         const entry = entries[index]
         this.set(entry[0], entry[1])

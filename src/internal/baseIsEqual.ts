@@ -8,7 +8,7 @@ import baseIsEqualDeep from './baseIsEqualDeep'
  * @param customizer
  * @param stack
  */
-function baseIsEqual(value, other, bitmask, customizer, stack) {
+function baseIsEqual(value, other, bitmask, customizer, stack?) {
   if (value === other) {
     return true
   }

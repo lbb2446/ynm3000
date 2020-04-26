@@ -1,3 +1,4 @@
+// 值严格相等
 function strictIndexOf(array, value, fromIndex) {
   let index = fromIndex - 1
   const { length } = array

@@ -1,11 +1,11 @@
 /**
- *
+ * 只要符合函数返回为真就相等
  * @param array
  * @param predicate
  * @param fromIndex number
  * @param fromRight boolean,是否从右边开始
  */
-function baseFindIndex(array, predicate, fromIndex, fromRight) {
+function baseFindIndex(array, predicate, fromIndex, fromRight?) {
   const { length } = array
   let index = fromIndex + (fromRight ? 1 : -1)
   while (fromRight ? --index : index++ < length) {

@@ -6,6 +6,7 @@
   "main": "dist/index.js",
   "scripts": {
     "test": "mocha -r ts-node/register tests/**/*.spec.ts",
+    "test1": "mocha -r ts-node/register --",
     "dev": "nodemon --watch src -e ts --exec ts-node src/index.ts"
   },
   "keywords": [

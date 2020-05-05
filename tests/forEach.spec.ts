@@ -10,8 +10,14 @@ describe('forEach fn', () => {
   })
 
   forEach({ a: 1, b: 2 }, (value, key) => {
-    it('forEach' + key, () => {
-      expect(value).to.equal(value)
-    })
+    if (key === 'a') {
+      it('forEach' + key, () => {
+        expect(value).to.equal(1)
+      })
+    } else if (key === 'b') {
+      it('forEach' + key, () => {
+        expect(value).to.equal(2)
+      })
+    }
   })
 })

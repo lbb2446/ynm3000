@@ -6,8 +6,8 @@ describe('escapeRegExp fn', () => {
   it('escapeRegExp', () => {
     const result = escapeRegExp('[baidu](http://www.baidu.com)')
     console.log('result', result)
-    //TODO:转义符被过滤
-    // expect(result).to.eql(`\[baidu\]\(http://www\.baidu\.com\)`)
-    // expect(/[baidu](http:\/\/www.baidu.com)/.test(result)).to.be.true
+    //'result'  \[baidu\]\(http://www\.baidu\.com\)
+    //转义符被额外的增加了转义符
+    expect(result).to.eql(`\\[baidu\\]\\(http://www\\.baidu\\.com\\)`)
   })
 })

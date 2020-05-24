@@ -20,6 +20,7 @@ describe('create fn', () => {
 
   // instanceof 运算符用于检测构造函数的
   // prototype属性是否出现在某个实例对象的原型链上。
+  //TODO:待理解
   it('create 1', () => {
     expect(circle instanceof Circle).to.be.true
   })

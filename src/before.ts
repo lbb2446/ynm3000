@@ -1,3 +1,8 @@
+/**
+ *
+ * @param n n次之前都会被执行
+ * @param func
+ */
 function before(n, func) {
   let result
   if (typeof func !== 'function') {

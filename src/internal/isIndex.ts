@@ -1,4 +1,4 @@
-//不使用valueber.MAX_SAFE_INTEGER不知道是不是怕有使用者自定义这个变量的值导致计算出错
+//不使用number.MAX_SAFE_INTEGER不知道是不是怕有使用者自定义这个变量的值导致计算出错
 const MAX_SAFE_INTEGER = 9007199254740991
 
 const reIsUint = /^(?:0|[1-9]\d*)$/
@@ -15,7 +15,9 @@ function isIndex(value, length) {
   return (
     !!length &&
     (type === 'number' || (type !== 'symbol' && reIsUint.test(value))) &&
-    value > -1 && value % 1 == 0 && value < length
+    value > -1 &&
+    value % 1 == 0 &&
+    value < length
   )
 }
 

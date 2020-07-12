@@ -8,7 +8,7 @@ const reIsUint = /^(?:0|[1-9]\d*)$/
  * @param value
  * @param length 最大值
  */
-function isIndex(value, length) {
+function isIndex(value, length?) {
   const type = typeof value
   length = length == null ? MAX_SAFE_INTEGER : length
 

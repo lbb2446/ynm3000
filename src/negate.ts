@@ -1,3 +1,7 @@
+/**
+ * 取反
+ * @param predicate
+ */
 function negate(predicate) {
   if (typeof predicate !== 'function') {
     throw new TypeError('Expected a function')

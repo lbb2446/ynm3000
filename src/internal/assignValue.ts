@@ -13,6 +13,9 @@ function assignValue(object, key, value) {
     }
   } else if (!(key in object) && value === undefined) {
     baseAssignValue(object, key, value)
+  } else if (key in object && value) {
+    //TODO:原函数对已有的数据是不做赋值处理的，改了点，不知道会不会有什么影响
+    baseAssignValue(object, key, value)
   }
 }
 

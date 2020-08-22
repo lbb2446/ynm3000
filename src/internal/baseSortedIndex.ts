@@ -4,6 +4,12 @@ import isSymbol from '../isSymbol'
 const MAX_ARRAY_LENGTH = 4294967295
 const HALF_MAX_ARRAY_LENGTH = MAX_ARRAY_LENGTH >>> 1
 
+/**
+ *
+ * @param array
+ * @param value
+ * @param retHighest 返回匹配上的最后一个index
+ */
 function baseSortedIndex(array, value, retHighest?) {
   let low = 0
   let high = array === null ? low : array.length

@@ -5,7 +5,7 @@ import isFlattenable from './isFlattenable'
  * @param array
  * @param depth
  * @param predicate
- * @param isStrict
+ * @param isStrict 是否严格，可通过predicate的校验
  * @param result
  */
 function baseFlatten(array, depth, predicate?, isStrict?, result?) {
@@ -23,7 +23,7 @@ function baseFlatten(array, depth, predicate?, isStrict?, result?) {
       } else {
         result.push(...value)
       }
-    } else if (isStrict) {
+    } else if (!isStrict) {
       result[result.length] = value
     }
   }

@@ -4,6 +4,7 @@ import { expect } from 'chai'
 import 'mocha'
 
 describe('uniqueId fn', () => {
+  //TODO:计数这个不是全局变量吗，为什么每次调用test用例，都是从头开始的值
   it('uniqueId1', () => {
     uniqueId('contact_')
     uniqueId('contact_')

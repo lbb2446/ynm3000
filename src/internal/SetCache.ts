@@ -5,7 +5,7 @@ const HASH_UNDEFINED = '__lodash_hash_undefined__'
 class SetCache {
   _data_: any
   push: (value: any) => SetCache
-  constructor(values) {
+  constructor(values?) {
     this._data_ = new MapCache(null)
 
     if (values && values.length) {

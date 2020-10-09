@@ -7,7 +7,7 @@ const reIsPlainProp = /^\w*$/
  * 判断是否可以作为键名
  * @param value
  */
-function isKey(value, object) {
+function isKey(value, object?) {
   if (Array.isArray(value)) {
     return false
   }

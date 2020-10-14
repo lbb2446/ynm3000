@@ -5,7 +5,7 @@
   "repository": "https://github.com/lbb2446/ynm3000",
   "main": "dist/index.js",
   "scripts": {
-    "test": "mocha -r ts-node/register tests/**/*.spec.ts",
+    "test": "mocha -r ts-node/register tests/*.spec.ts tests/**/*.spec.ts",
     "test1": "mocha -r ts-node/register --",
     "dev": "nodemon --watch src -e ts --exec ts-node src/index.ts"
   },

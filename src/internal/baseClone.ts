@@ -134,7 +134,7 @@ function baseClone(value, bitmask, customizer?, key?, object?, stack?) {
   const isFull = bitmask & CLONE_SYMBOLS_FLAG
 
   if (customizer) {
-    result = object ? customizer(value, key, object, stack) : customizer(object)
+    result = object ? customizer(value, key, object, stack) : customizer(value)
   }
   if (result !== undefined) {
     return result

@@ -158,7 +158,7 @@ function baseClone(value, bitmask, customizer?, key?, object?, stack?) {
       return cloneBuffer(value, isDeep)
     }
     if (tag == objectTag || tag == argsTag || (isFunc && !object)) {
-      result = isFlat || isFunc ? {} : initCloneObject(value)
+      result = (isFlat || isFunc) ? {} : initCloneObject(value)
       if (!isDeep) {
         return isFlat
           ? copySymbolsIn(value, copyObject(value, keysIn(value), result))
@@ -173,8 +173,8 @@ function baseClone(value, bitmask, customizer?, key?, object?, stack?) {
   }
   stack || (stack = new Stack())
   const stacked = stack.get(value)
-  if (stack) {
-    return stack
+  if (stacked) {
+    return stacked
   }
   stack.set(value, result)
   if (tag == mapTag) {

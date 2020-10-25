@@ -26,6 +26,7 @@ function baseIsMatch(object, source, matchData, customizer?) {
   object = Object(object)
   while (index--) {
     data = matchData[index]
+    //判断同键名的值是否相等
     if (
       noCustomozer && data[2]
         ? data[1] !== object[data[0]]

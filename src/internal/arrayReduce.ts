@@ -5,7 +5,7 @@
  * @param accumulator 累加器
  * @param initAccum 是否取第一个值为累加器初始值
  */
-function arrayReduce(array, iteratee, accumulator, initAccum) {
+function arrayReduce(array, iteratee, accumulator, initAccum?) {
   const length = array === null ? 0 : array.length
   let index = -1
   if (initAccum && length) {

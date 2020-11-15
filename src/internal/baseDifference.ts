@@ -6,6 +6,15 @@ import SetCache from './SetCache'
 
 const LARGE_ARRAY_SIZE = 200
 
+/**
+ *
+ * 找不同
+ * @param {*} array
+ * @param {*} values
+ * @param {*} [iteratee] 对每组每个数据的处理方法
+ * @param {*} [comparator] 找不同的方法
+ * @returns
+ */
 function baseDifference(array, values, iteratee?, comparator?) {
   let includes: any = arrayIncludes
   let isCommon = true

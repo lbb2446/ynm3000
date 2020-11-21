@@ -108,7 +108,7 @@ function vail(password: string): res {
     score = ruleAward(password, score)
      score = rulePunishment(password, score)
     //职责链
-    if (score < 0) {
+    if (score <= 0) {
         level = Level[Level.error]
     } else if (score < 60) {
         level = Level[Level.weak]

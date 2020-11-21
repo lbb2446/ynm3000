@@ -1,7 +1,7 @@
 import getSymbols from './getSymbols'
 
 /**
- * 获取当前对象中以及继承的所有可枚举的symbol属性
+ * 获取当前对象中以及其原型链上的所有可枚举的symbol属性
  * @param object
  */
 function getSymbolsIn(object) {

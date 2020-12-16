@@ -5,7 +5,7 @@ import Stack from './Stack'
 import baseMergeDeep from './baseMergeDeep'
 import assignMergeValue from './assignMergeValue'
 
-function baseMerge(object, source, srcIndex, customizer, stack?) {
+function baseMerge(object, source, srcIndex, customizer?, stack?) {
   if (object === source) {
     return
   }
